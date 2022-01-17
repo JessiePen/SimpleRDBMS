@@ -1,0 +1,34 @@
+CS660 Project Assignment 4 Report
+
+######################################################################################################
+
+Name1: [Your full name] Yuhe Peng
+UID1: [UID] u97821210
+
+No Collaboration/
+Name2: [Your colloborator's full name]
+UID2: [UID]
+
+######################################################################################################
+=====================================================================================
+1. Describe any design decisions you made. [Please refer to the lab website for detailed requirements here.]
+This project is to implement a query optimizer on top of SimpleDB. The most important part is to design how to implement
+the join operation optimizer. In implementing the IntHistogram, to estimate the selectivity, i first used a min_max map to
+record the minium and maxium of the bucket and calculate the selective then. In tableStats, I first implememnt estimateSelectivity
+to estimate the selectivity of predicate. Then calculate the cost of each scan. finnally implement estimateTableCardinality to
+get the  number of tuples in the relation. In join cost estimation, i use dynamic programming to to handle the join operation
+optimizer.
+=====================================================================================
+2. Discuss and justify any changes you made to the API.
+NO changes are made to the API.
+=====================================================================================
+3. Describe any missing or incomplete elements of your code.
+All elements are completed.
+=====================================================================================
+4. Describe how long you spent on the assignment, and whether there was anything you found particularly difficult or confusing.
+About 10 hours.
+=====================================================================================
+5. If you collaborate with someone else, you have to discribe how you split the workload.
+=====================================================================================
+######################################################################################################
+
